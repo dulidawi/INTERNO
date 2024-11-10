@@ -25,13 +25,23 @@ body {
   padding-bottom: 18px;
 }
 
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
 .logo-image {
   width: 177px;
   height: 50px;
-  flex-shrink: 0;
+  margin-right: 485px;
 }
 
-.nav-item {
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
   color: var(--main-color);
   font-size: 19px;
   font-weight: 400;
@@ -88,9 +98,15 @@ body {
   margin-top: 35px;
 }
 
+.learning-list {
+  display: flex;
+  justify-content: center;
+  gap: 93px;
+}
+
 .learnig-title {
   color: var(--main-color);
-  /* text-align: center; */
+  text-align: center;
   font-family: "DM Serif Display";
   font-size: 25px;
   font-weight: 400;
@@ -101,16 +117,24 @@ body {
 
 .learning-subtitle {
   color: var(--subtitle-color);
-  /* text-align: center; */
+  text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.22px;
+  margin-bottom: 35px;
+}
+
+.viewmore-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .learning-link {
   color: var(--subtitle-color);
-  /* text-align: center; */
+  text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
@@ -127,6 +151,13 @@ body {
   padding-top: 75px;
   padding-bottom: 70px;
   margin-bottom: 100px;
+}
+
+.consultation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 77px;
 }
 
 .consultation-title {
@@ -148,9 +179,28 @@ body {
   letter-spacing: 0.22px;
 }
 
-.consultation-div{
-    margin-top: 30px;
-    margin-bottom: 11px;
+.consultation-div {
+  margin-top: 30px;
+  margin-bottom: 11px;
+  display: flex;
+  max-width: 50%;
+}
+
+.consultation-div img {
+  margin-right: 20px;
+}
+
+.consultation-phoneicon {
+  padding: 29px 29px 30px 30px;
+  background-image: url(../img/phonebackground.png);
+  width: 93px;
+  height: 93px;
+}
+
+.contact-info {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .cosultation-number {
@@ -161,34 +211,303 @@ body {
   letter-spacing: 0.22px;
 }
 
-.consultation-button{
-color: #FFF;
-font-size: 18px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.72px;
-background-image: url(../img/buttonbackground.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-width: 263px;
-height: 71px;
-padding: 21px 67px 23px 34px ;
-border-radius: 18px;
-border: 2px solid var(--main-color);
+.consultation-button {
+  color: var(--darkbackground-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.72px;
+  background-image: url(../img/buttonbackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 263px;
+  height: 71px;
+  padding: 21px 67px 23px 34px;
+  border-radius: 18px;
+  border: 2px solid var(--main-color);
+  margin-top: 50px;
 }
 
-.consultation-image{
-    border-radius: 0px 326px 0px 123px;
-background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+.consultation-image {
+  border-radius: 0px 326px 0px 123px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
-.main-opinion{
-    margin-top: 140px;
-    padding-top: 103px;
-    padding-bottom: 121px;
+.main-opinion {
+  padding-top: 103px;
+  padding-bottom: 121px;
+  margin-top: 140px;
+  margin-bottom: 140px;
 }
 
-.opinion-title{
+.opinion-title {
+  color: var(--main-color);
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.22px;
+}
 
+.opinion-span {
+  display: flex;
+}
+
+.opinion-image {
+  width: 77px;
+  height: 77px;
+  margin-right: 20px;
+  border-radius: 100px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.opinion-subtitle {
+  color: var(--main-color);
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.opinion-locationt {
+  color: var(--subtitle-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.opinion-text {
+  color: var(--subtitle-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.opinion-div {
+  margin-bottom: 25.39px;
+  padding-right: 49.12px;
+}
+
+.main-brands {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.main-project {
+  margin-bottom: 80px;
+}
+
+.project-title {
+  color: var(--main-color);
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 1.32;
+  letter-spacing: 0.22px;
+}
+
+.project-text {
+  color: var(--subtitle-color);
+  text-align: center;
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  margin-bottom: 70px;
+}
+
+.project-span {
+  display: flex;
+}
+
+.project-div {
+  padding-top: 25px;
+}
+
+.project-subtitle {
+  color: var(--main-color);
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.project-item-text {
+  color: var(--subtitle-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.main-experience {
+  padding-top: 154px;
+  padding-bottom: 193px;
+  margin-bottom: 130px;
+}
+
+.experience-image {
+  margin-bottom: 10px;
+}
+
+.main-blogs {
+  margin-bottom: 100px;
+}
+
+.blogs-title {
+  color: var(--main-color);
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.22px;
+}
+
+.blogs-title-text {
+  color: var(--subtitle-color);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  margin-bottom: 70px;
+}
+
+.blogs-span {
+  display: flex;
+}
+
+.blogs-subtitle {
+  color: var(--main-color);
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.blogs-text {
+  color: var(--subtitle-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.blogs-div {
+  padding-top: 10px;
+  gap: 149px;
+}
+
+.main-connect {
+  padding-top: 100px;
+  padding-bottom: 95px;
+  background-image: url(../img/connectbackground.png);
+  border-radius: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 414px;
+}
+
+.connect-title {
+  color: #fff;
+  text-align: center;
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.connect-subtitle {
+  color: var(--darkbackground-color);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.connect-button {
+  color: var(--darkbackground-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  padding: 21px 67px 23px 34px;
+  background-image: url(../img/connectarrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 241px;
+  height: 71px;
+  border: none;
+  fill: #cda274;
+  stroke-width: 2px;
+  stroke: #cda274;
+  filter: drop-shadow(1px 0px 18px rgba(0, 0, 0, 0.2));
+  margin-top: 31px;
+}
+
+.footer-logo-text {
+  color: var(--subtitle-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.footer-icon {
+  padding: 19.2px 152px 14.8px 0px;
+  gap: 40px;
+}
+
+.pages-title,
+.navigation-title,
+.address-title {
+  color: var(--main-color);
+  font-family: "DM Serif Display";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.footer-page,
+.navigation-link,
+.address-link {
+  color: var(--subtitle-color);
+  font-family: Jost;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.footer-bottom-text {
+  color: var(--subtitle-color);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+}
+
+.footer-bottom-link {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
 }
