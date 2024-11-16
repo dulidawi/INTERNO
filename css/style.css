@@ -33,7 +33,7 @@ body {
 .logo-image {
   width: 177px;
   height: 50px;
-  margin-right: 485px;
+  margin-right: auto;
 }
 
 .nav-list {
@@ -60,7 +60,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 250px;
 }
 
 .hero-title {
@@ -102,10 +102,18 @@ body {
   margin-top: 35px;
 }
 
+.main-learning {
+  padding-top: 100px;
+}
+
 .learning-list {
   display: flex;
   justify-content: center;
   gap: 93px;
+}
+
+.learning-item{
+  padding: 75px 41px 70px 42px;
 }
 
 .learnig-title {
@@ -149,11 +157,6 @@ body {
   width: 24px;
   height: 17px;
   flex-shrink: 0;
-}
-
-.main-learning {
-  padding-bottom: 70px;
-  padding-top: 75px;
 }
 
 .main-consultation{
@@ -363,12 +366,9 @@ body {
   gap: 20px;
 }
 
-.projest-item {
-  margin-bottom: 60px;
-}
-
 .project-div {
   padding-top: 25px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
@@ -515,7 +515,7 @@ body {
 }
 
 .blogs-div {
-  padding-top: 10px;
+  /* padding-top: 10px; */
   gap: 149px;
   display: flex;
   justify-content: space-between;
@@ -596,10 +596,6 @@ body {
   gap: 16px; 
 }
 
-.footer-div:nth-child(-n + 3) {
-  padding-right: 60px;
-}
-
 .footer-logo-text {
   color: var(--subtitle-color);
   font-size: 22px;
@@ -634,7 +630,6 @@ body {
 .navigation-item,
 .address-item {
   margin-bottom: 30px;
-  padding-right: 30px;
 }
 
 .footer-page,
