@@ -17,7 +17,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .header {
@@ -55,12 +55,12 @@ body {
 
 .hero-section {
   padding-top: 188px;
-  padding-bottom: 260px;
+  padding-bottom: 250px;
   background-image: url(../img/hero-background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .hero-title {
@@ -152,9 +152,13 @@ body {
 }
 
 .main-learning {
-  padding-top: 75px;
   padding-bottom: 70px;
-  margin-bottom: 100px;
+  padding-top: 75px;
+}
+
+.main-consultation{
+  padding-top: 100px;
+  padding-bottom: 139px;
 }
 
 .consultation-container {
@@ -241,14 +245,15 @@ body {
 .main-opinion {
   padding-top: 103px;
   padding-bottom: 121px;
-  margin-top: 140px;
-  margin-bottom: 141px;
 }
 
-.opinion-container {
+.main-opinion {
   background-image: url(../img/opinionbackground.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   border-radius: 70px;
   padding: 103px 51px 121px 51px;
 }
@@ -317,7 +322,8 @@ body {
 }
 
 .main-brands {
-  margin-bottom: 100px;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .brands-list {
@@ -326,7 +332,7 @@ body {
 }
 
 .main-project {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .project-title {
@@ -392,8 +398,7 @@ body {
 
 .main-experience {
   padding-top: 154px;
-  padding-bottom: 193px;
-  margin-bottom: 130px;
+  padding-bottom: 140px;
   background-color: var(--additional-color);
 }
 
@@ -443,7 +448,8 @@ body {
 }
 
 .main-blogs {
-  margin-bottom: 100px;
+  padding-top: 142px;
+  padding-bottom: 100px;
 }
 
 .blogs-title {
@@ -524,14 +530,13 @@ body {
 
 .main-connect {
   padding-top: 100px;
-  padding-bottom: 95px;
+  padding-bottom: 174px;
   background-image: url(../img/connectbackground.png);
   border-radius: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 414px;
-  margin-bottom: 174px;
 }
 
 .connect-container {
@@ -579,13 +584,16 @@ body {
   margin-top: 31px;
 }
 
+.footer-section{
+  padding-top: 80px;
+}
+
 .footer-div-container {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 80px;
-  gap: 16px;
-  border-bottom: 1px solid var(--footer-line-color); 
+  gap: 16px; 
 }
 
 .footer-div:nth-child(-n + 3) {
@@ -651,6 +659,10 @@ body {
   padding-top: 35px;
   padding-bottom: 36px;
   gap: 10px;
+}
+
+.footer-bottom{
+  border-top: 1px solid var(--footer-line-color);
 }
 
 .footer-bottom-text {
