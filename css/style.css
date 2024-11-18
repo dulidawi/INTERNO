@@ -111,12 +111,12 @@ body {
   justify-content: center;
 }
 
-.learning-item{
+.learning-item {
   padding: 75px 40px 70px 40px;
 }
 
-.learning-item:nth-child(2){
-  .viewmore-div{
+.learning-item:nth-child(2) {
+  .viewmore-div {
     margin-top: 15px;
   }
 }
@@ -262,7 +262,7 @@ body {
   border-radius: 70px;
 }
 
-.opinion-container{
+.opinion-container {
   padding-top: 103px;
 }
 
@@ -639,7 +639,7 @@ body {
 
 .pages-item:last-child,
 .navigation-item:last-child,
-.address-item:last-child{
+.address-item:last-child {
   margin-bottom: 0;
 }
 
