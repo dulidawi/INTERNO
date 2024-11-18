@@ -121,14 +121,6 @@ body {
   }
 }
 
-/* .learning-item:last-child{
-  .learning-subtitle{
-    width: 296px;
-  }
-  
-} */
-
-
 .learnig-title {
   color: var(--main-color);
   text-align: center;
@@ -268,7 +260,10 @@ body {
   background-position: center;
   background-size: contain;
   border-radius: 70px;
+}
 
+.opinion-container{
+  padding-top: 103px;
 }
 
 .opinion-title {
@@ -281,7 +276,6 @@ body {
   letter-spacing: 0.22px;
   display: flex;
   flex-direction: column;
-  padding-top: 103px;
 }
 
 .opinion-list {
@@ -403,7 +397,7 @@ body {
 }
 
 .project-arrow {
-  background: #f4f0ec;
+  background: var(--additional-color);
   padding: 27px 30px 27px 31px;
   border-radius: 100px;
 }
@@ -534,14 +528,12 @@ body {
 }
 
 .blogs-arrow-image {
-  background: #f4f0ec;
+  background: var(--additional-color);
   padding: 18px 22px 18px 21px;
   border-radius: 100px;
 }
 
 .main-connect {
-  padding-top: 100px;
-  padding-bottom: 174px;
   background-image: url(../img/connectbackground.png);
   border-radius: 70px;
   background-repeat: no-repeat;
@@ -555,10 +547,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 174px;
 }
 
 .connect-title {
-  color: #fff;
+  color: var(--darkbackground-color);
   text-align: center;
   font-family: "DM Serif Display";
   font-size: 50px;
@@ -588,14 +582,14 @@ body {
   background-position: center;
   border: none;
   border-radius: 20px;
-  fill: #cda274;
+  fill: var(--accent-color);
   stroke-width: 2px;
-  stroke: #cda274;
+  stroke: var(--accent-color);
   filter: drop-shadow(1px 0px 18px rgba(0, 0, 0, 0.2));
   margin-top: 31px;
 }
 
-.footer-section {
+.footer {
   padding-top: 80px;
 }
 
