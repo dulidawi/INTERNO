@@ -276,12 +276,14 @@ body {
   letter-spacing: 0.22px;
   display: flex;
   flex-direction: column;
+
 }
 
 .opinion-list {
   display: flex;
   gap: 18px;
-  padding: 47px 51px 121px 51px;
+  padding: 0 51px 121px 51px;
+  margin-top: 47px;
 }
 
 .opinion-item {
@@ -593,11 +595,14 @@ body {
   padding-top: 80px;
 }
 
+.footer-section{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
 .footer-div-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 80px;
   gap: 16px;
 }
 
@@ -659,11 +664,14 @@ body {
   flex-direction: column;
 }
 
+.footer-bottom{
+  padding-top: 35px;
+  padding-bottom: 36px;
+}
+
 .bootom-container {
   display: flex;
   justify-content: center;
-  padding-top: 35px;
-  padding-bottom: 36px;
   gap: 10px;
 }
 
