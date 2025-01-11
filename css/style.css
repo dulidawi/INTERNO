@@ -330,6 +330,36 @@ body {
   letter-spacing: 0.22px;
 }
 
+.opinion-items{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.opinion-link{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+
+.opinion-link:hover, 
+.opinion-link:focus{
+  background-color: #cda274;
+  outline: 0px solid transparent;
+  .opinion-icon{
+    fill: antiquewhite;
+  }
+}
+
+.opinion-icon{
+  width: 20px;
+  height: 20px;
+  fill: grey;
+}
+
 .main-brands {
   padding-top: 140px;
   padding-bottom: 100px;
