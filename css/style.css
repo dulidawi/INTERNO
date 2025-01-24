@@ -22,6 +22,11 @@ body {
 .header {
   padding-top: 26px;
   padding-bottom: 18px;
+  position: fixed;
+  width: 100%;
+  background: #4d50539c;
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
 }
 
 .header-box {
@@ -70,6 +75,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.22px;
   margin-bottom: 19px;
+  /* position: sticky;
+ top: 0; */
 }
 
 .hero-span {
@@ -526,9 +533,28 @@ body {
   border: 1px solid #e7e7e7;
 }
 
+.blogs-position{
+  position: relative;
+}
+
 .blogs-image {
   border-radius: 45px 45px 0px 0px;
   margin-bottom: 15px;
+}
+
+.blogs-button{
+  color: var(--subtitle-color);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.22px;
+padding: 9px 11px;
+border-radius: 8px 8px 8px 0px;
+background: var(--darkbackground-color);
+border: none;
+position: absolute;
+top: 223px;
+left: 24px;
 }
 
 .blogs-subtitle {
@@ -725,3 +751,30 @@ body {
   line-height: 1.5;
   letter-spacing: 0.22px;
 } 
+
+.scrolltotop{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #cda274;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.scrolltotop:hover{
+  background: transparent;
+  outline: 2px solid var(--accent-color);
+  .scrollicon{
+   fill: var(--accent-color);
+  }
+}
+
+.scrollicon{
+  width: 30px;
+  height: 30px;
+  fill: var(--subtitle-color);
+}
