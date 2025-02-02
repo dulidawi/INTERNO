@@ -46,7 +46,8 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--accent-color);
+  color: var(--accent-color);  
+
 }
 
 .nav-link {
@@ -55,6 +56,30 @@ body {
   font-weight: 400;
   line-height: 1.57;
   letter-spacing: 0.4px;
+  position: relative;
+  transition-property: color;
+  transition-duration: 350ms;
+}
+
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent-color);
+  opacity: 0;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  transition-property: transform;
+  transition-duration: 350ms;
+  transform: scale(0);
+}
+
+.nav-link:hover:after {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .hero-section {
@@ -282,7 +307,6 @@ body {
   letter-spacing: 0.22px;
   display: flex;
   flex-direction: column;
-
 }
 
 .opinion-list {
@@ -337,31 +361,32 @@ body {
   letter-spacing: 0.22px;
 }
 
-.opinion-items{
+.opinion-items {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-top: 30px;
 }
 
-.opinion-link{
+.opinion-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: flex;justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.opinion-link:hover, 
-.opinion-link:focus{
+.opinion-link:hover,
+.opinion-link:focus {
   background-color: #cda274;
   outline: 0px solid transparent;
-  .opinion-icon{
+  .opinion-icon {
     fill: antiquewhite;
   }
 }
 
-.opinion-icon{
+.opinion-icon {
   width: 20px;
   height: 20px;
   fill: grey;
@@ -533,7 +558,7 @@ body {
   border: 1px solid #e7e7e7;
 }
 
-.blogs-position{
+.blogs-position {
   position: relative;
 }
 
@@ -542,19 +567,19 @@ body {
   margin-bottom: 15px;
 }
 
-.blogs-button{
+.blogs-button {
   color: var(--subtitle-color);
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.22px;
-padding: 9px 11px;
-border-radius: 8px 8px 8px 0px;
-background: var(--darkbackground-color);
-border: none;
-position: absolute;
-top: 223px;
-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  padding: 9px 11px;
+  border-radius: 8px 8px 8px 0px;
+  background: var(--darkbackground-color);
+  border: none;
+  position: absolute;
+  top: 223px;
+  left: 24px;
 }
 
 .blogs-subtitle {
@@ -650,7 +675,7 @@ left: 24px;
   padding-top: 80px;
 }
 
-.footer-section{
+.footer-section {
   padding-top: 50px;
   padding-bottom: 80px;
 }
@@ -719,7 +744,7 @@ left: 24px;
   flex-direction: column;
 }
 
-.footer-bottom{
+.footer-bottom {
   padding-top: 35px;
   padding-bottom: 36px;
 }
@@ -750,9 +775,9 @@ left: 24px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.22px;
-} 
+}
 
-.scrolltotop{
+.scrolltotop {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -765,15 +790,15 @@ left: 24px;
   right: 10px;
 }
 
-.scrolltotop:hover{
+.scrolltotop:hover {
   background: transparent;
   outline: 2px solid var(--accent-color);
-  .scrollicon{
-   fill: var(--accent-color);
+  .scrollicon {
+    fill: var(--accent-color);
   }
 }
 
-.scrollicon{
+.scrollicon {
   width: 30px;
   height: 30px;
   fill: var(--subtitle-color);
