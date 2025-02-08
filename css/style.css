@@ -77,10 +77,10 @@ body {
   transform: scale(0);
 }
 
-.nav-link:hover:after {
+/* .nav-link:hover:after {
   opacity: 1;
   transform: scale(1);
-}
+} */
 
 .hero-section {
   padding-top: 188px;
