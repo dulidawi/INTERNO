@@ -93,6 +93,16 @@ body {
   padding-bottom: 250px;
 }
 
+.hero-section:hover {
+  .hero-text {
+    transform: translateX(-2000px);
+  }
+}
+
+.hero-container{
+  position: relative;
+}
+
 .hero-title {
   color: var(--main-color);
   font-family: "DM Serif Display";
@@ -132,6 +142,16 @@ body {
   stroke-width: 2px;
   stroke: #292f36;
   margin-top: 35px;
+}
+
+.hero-text {
+  font-size: 30px;
+  color: #cda274;
+  position: absolute;
+  bottom: -250px;
+  transform: translateX(2000px);
+  transition-property: transform;
+  transition-duration: 8000ms;
 }
 
 .main-learning {
