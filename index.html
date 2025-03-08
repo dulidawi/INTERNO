@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -20,34 +24,34 @@
 <body>
   <header class="header">
     <div class="container header-box">
-      <img src="./img/logoimage.png" alt="logoimage" class="logo-image" />
+      <img src="./img/logoimage.png" alt="logoimage" class="logo-image animate__animated animate__fadeInLeft"  />
       <nav class="header-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#footer" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="#consultation" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#footer" class="nav-link">Pages</a></li>
-          <li class="nav-item"><a href="#footer" class="nav-link">Contact Us</a>
+          <li class="nav-item animate__animated animate__fadeInDown"><a href="./index.html" class="nav-link">Home</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a href="#footer" class="nav-link">About Us</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a href="#consultation" class="nav-link">Services</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a href="#footer" class="nav-link">Pages</a></li>
+          <li class="nav-item animate__animated animate__fadeInDown"><a href="#footer" class="nav-link">Contact Us</a>
           </li>
         </ul>
       </nav>
     </div>
     <a href="#opinion" class="scrolltotop"><svg class="scrollicon">
-      <use href="./img/symbol-defs.svg#icon-arrowapp"></use>
-    </svg></a>
+        <use href="./img/symbol-defs.svg#icon-arrowapp"></use>
+      </svg></a>
   </header>
   <main class="main">
     <section class="hero-section">
       <div class="container hero-container">
         <h1 class="hero-title">
-          <span class="hero-span">Let's Create Your</span>
-          <span class="hero-span">Dream Interior</span>
+          <span class="hero-span animate__animated animate__fadeInDown">Let's Create Your</span>
+          <span class="hero-span animate__animated animate__fadeInDown">Dream Interior</span>
         </h1>
-        <p class="hero-subtitle">
+        <p class="hero-subtitle animate__animated animate__fadeInDown">
           The world needs innovators and problem solvers who turn
         </p>
-        <p class="hero-subtitle">challenges into greater opportunities.</p>
-        <button class="hero-button">Get Started</button>
+        <p class="hero-subtitle animate__animated animate__fadeInDown">challenges into greater opportunities.</p>
+        <button class="hero-button animate__animated animate__fadeInDown">Get Started</button>
         <p class="hero-text">Привіт, Олександра!</p>
       </div>
     </section>
@@ -55,7 +59,7 @@
     <section class="main-learning">
       <div class="container learning-box">
         <ul class="learning-list">
-          <li class="learning-item">
+          <li class="learning-item" data-aos="fade-down">
             <h2 class="learnig-title">Interior Design</h2>
             <p class="learning-subtitle">
               Enhancing the interior to achieve a healthier environment for
@@ -66,7 +70,7 @@
                 class="learning-image" />
             </div>
           </li>
-          <li class="learning-item">
+          <li class="learning-item" data-aos="fade-down">
             <h2 class="learnig-title">Furniture</h2>
             <p class="learning-subtitle">
               Movable articles that are used to make a room or building
@@ -77,8 +81,8 @@
                 class="learning-image" />
             </div>
           </li>
-          <li class="learning-item">
-            <h2 class="learnig-title">Flooring</h2>
+          <li class="learning-item" data-aos="fade-down">
+            <h2 class="learnig-title" >Flooring</h2>
             <p class="learning-subtitle">
               Thin object any finished material applied over a floor structure
               to provide a walking surface.
@@ -95,18 +99,18 @@
     <section class="main-consultation" id="consultation">
       <div class="container consultation-container">
         <div class="consultation-content">
-          <h2 class="consultation-title">
+          <h2 class="consultation-title" data-aos="fade-right">
             We Tackle The Most Challenging Designs
           </h2>
-          <p class="consultation-text">
+          <p class="consultation-text" data-aos="fade-up-right">
             The world needs innovators and problem solvers who turn challenges
             into greater opportunities. We have
           </p>
-          <p class="consultation-text">
+          <p class="consultation-text" data-aos="fade-up-right">
             an insatiable curiosity about transformative trends challenging the
             status.
           </p>
-          <div class="consultation-div">
+          <div class="consultation-div" data-aos="flip-right"> 
             <div class="phoneicon-div">
               <img src="./img/phoneicon.png" alt="phoneicon" class="consultation-phoneicon" />
             </div>
@@ -115,19 +119,19 @@
               <p class="consultation-text">Call Us Anytime</p>
             </div>
           </div>
-          <button class="consultation-button">Get Free Estimate</button>
+          <button class="consultation-button" data-aos="flip-up">Get Free Estimate</button>
         </div>
-        <img src="./img/whitekitchen.png" alt="whitekitchen" class="consultation-image" />
+        <img src="./img/whitekitchen.png" alt="whitekitchen" class="consultation-image" data-aos="fade-left"/>
       </div>
     </section>
 
     <section class="main-opinion" id="opinion">
       <div class="container opinion-container">
-        <h2 class="opinion-title">
+        <h2 class="opinion-title" data-aos="fade-down">
           <span class="opinion-span">What the People Thinks</span><span class="opinion-span">About Interno</span>
         </h2>
         <ul class="opinion-list">
-          <li class="opinion-item">
+          <li class="opinion-item" data-aos="zoom-in">
             <div class="opinion-div">
               <img src="./img/lisaclairton.png" alt="lisaclairton" class="opinion-image" />
               <div class="opinion-name">
@@ -170,7 +174,7 @@
               </li>
             </ul>
           </li>
-          <li class="opinion-item">
+          <li class="opinion-item" data-aos="zoom-in">
             <div class="opinion-div">
               <img src="./img/davidknight.png" alt="davidknight" class="opinion-image" />
               <div class="opinion-name">
@@ -213,7 +217,7 @@
               </li>
             </ul>
           </li>
-          <li class="opinion-item">
+          <li class="opinion-item" data-aos="zoom-in">
             <div class="opinion-div">
               <img src="./img/risaclairton.png" alt="risaclairton" class="opinion-image" />
               <div class="opinion-name">
@@ -263,19 +267,19 @@
     <section class="main-brands">
       <div class="container brands-container">
         <ul class="brands-list">
-          <li class="brands-item">
+          <li class="brands-item" data-aos="zoom-out">
             <img src="./img/modernhome.png" alt="modernhome" class="brands-image" />
           </li>
-          <li class="brands-item">
+          <li class="brands-item" data-aos="zoom-out">
             <img src="./img/stylevintage.png" alt="stylevintage" class="brands-image" />
           </li>
-          <li class="brands-item">
+          <li class="brands-item" data-aos="zoom-out">
             <img src="./img/brand.png" alt="brand" class="brands-image" />
           </li>
-          <li class="brands-item">
+          <li class="brands-item" data-aos="zoom-out">
             <img src="./img/naturehome.png" alt="naturehome" class="brands-image" />
           </li>
-          <li class="brands-item">
+          <li class="brands-item" data-aos="zoom-out">
             <img src="./img/clasicstudio.png" alt="clasicstudio" class="brands-image" />
           </li>
         </ul>
@@ -284,8 +288,8 @@
 
     <section class="main-project" id="project">
       <div class="container project-container">
-        <h2 class="project-title">Recent Projects</h2>
-        <p class="project-text">
+        <h2 class="project-title" data-aos="fade-down">Recent Projects</h2>
+        <p class="project-text" data-aos="fade-down">
           <span class="project-span">With tools to make every part of your process more human and a
             support team</span><span class="project-span">excited to help you, getting started with us never been
             easier.</span>
@@ -293,9 +297,13 @@
         <ul class="project-list">
           <li class="project-item">
             <div class="project-overlay">
-            <img src="./img/winterydryimg.png" alt="winterydryimg" class="project-image" />
-            <p class="project-desk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, sunt deleniti dolore ipsum a aspernatur odio, odit veniam repudiandae earum maiores, suscipit eius id consequatur assumenda necessitatibus autem corrupti voluptatem nostrum? Sed distinctio quia fugiat error quam quasi, laboriosam vero dolorem laborum reprehenderit fugit laudantium, aperiam ducimus doloribus! Assumenda, vero!</p>
-          </div>
+              <img src="./img/winterydryimg.png" alt="winterydryimg" class="project-image" />
+              <p class="project-desk">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, sunt deleniti
+                dolore ipsum a aspernatur odio, odit veniam repudiandae earum maiores, suscipit eius id consequatur
+                assumenda necessitatibus autem corrupti voluptatem nostrum? Sed distinctio quia fugiat error quam quasi,
+                laboriosam vero dolorem laborum reprehenderit fugit laudantium, aperiam ducimus doloribus! Assumenda,
+                vero!</p>
+            </div>
             <div class="project-div">
               <div class="descriptiontext-div">
                 <h3 class="project-subtitle">Winery Dry Creek Building</h3>
@@ -380,8 +388,9 @@
         <ul class="blogs-list">
           <li class="blogs-item">
             <div class="blogs-position">
-            <img src="./img/residentialinterior.jpg" alt="residentialinterior" class="blogs-image" />
-            <button type="button" class="blogs-button">Kitchen Design</button></div>
+              <img src="./img/residentialinterior.jpg" alt="residentialinterior" class="blogs-image" />
+              <button type="button" class="blogs-button">Kitchen Design</button>
+            </div>
             <h3 class="blogs-subtitle">
               <span>Residential Interior Designer</span>
               <span>In New York, USA</span>
@@ -392,9 +401,10 @@
             </div>
           </li>
           <li class="blogs-item">
-            <div class="blogs-position"> 
-            <img src="./img/howtochoose.png" alt="howtochoose" class="blogs-image" />
-            <button type="button" class="blogs-button">Living Room</button></div>
+            <div class="blogs-position">
+              <img src="./img/howtochoose.png" alt="howtochoose" class="blogs-image" />
+              <button type="button" class="blogs-button">Living Room</button>
+            </div>
             <h3 class="blogs-subtitle">
               <span>How To Choose The Best Wall</span>
               <span>Art & Decor House?</span>
@@ -406,8 +416,9 @@
           </li>
           <li class="blogs-item">
             <div class="blogs-position">
-            <img src="./img/tipstoincrease.png" alt="tipstoincrease" class="blogs-image" />
-            <button type="button" class="blogs-button">Minimalist Interior</button></div>
+              <img src="./img/tipstoincrease.png" alt="tipstoincrease" class="blogs-image" />
+              <button type="button" class="blogs-button">Minimalist Interior</button>
+            </div>
             <h3 class="blogs-subtitle">
               <span>Tips To Increase The Interior</span>
               <span>Value Of Your House</span>
@@ -419,8 +430,9 @@
           </li>
           <li class="blogs-item">
             <div class="blogs-position">
-            <img src="./img/bestsolution.png" alt="bestsolution" class="blogs-image" />
-            <button type="button" class="blogs-button">Kitchen Design</button></div>
+              <img src="./img/bestsolution.png" alt="bestsolution" class="blogs-image" />
+              <button type="button" class="blogs-button">Kitchen Design</button>
+            </div>
             <h3 class="blogs-subtitle">
               <span>Best Solution For Any</span>
               <span>Office & Business Interior</span>
@@ -432,8 +444,9 @@
           </li>
           <li class="blogs-item">
             <div class="blogs-position">
-            <img src="./img/getsolution.png" alt="getsolution" class="blogs-image" />
-            <button type="button" class="blogs-button">Living Room</button></div>
+              <img src="./img/getsolution.png" alt="getsolution" class="blogs-image" />
+              <button type="button" class="blogs-button">Living Room</button>
+            </div>
             <h3 class="blogs-subtitle">
               <span>Get Solution For Building</span>
               <span>Construction Work</span>
@@ -445,8 +458,9 @@
           </li>
           <li class="blogs-item">
             <div class="blogs-position">
-            <img src="./img/attainthebest.png" alt="attainthebest" class="blogs-image" />
-            <button type="button" class="blogs-button">Minimalist Interior</button></div>
+              <img src="./img/attainthebest.png" alt="attainthebest" class="blogs-image" />
+              <button type="button" class="blogs-button">Minimalist Interior</button>
+            </div>
             <h3 class="blogs-subtitle">
               <span>Attain The Best Finish</span>
               <span>For The Kitchen Cabinets</span>
@@ -565,5 +579,10 @@
       </div>
     </section>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
